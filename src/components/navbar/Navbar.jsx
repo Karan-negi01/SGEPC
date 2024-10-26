@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-
-import './Navbar.css'
-
-
-
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
-
   const [showDropdown1, setShowDropdown1] = useState(false);
   const [showDropdown2, setShowDropdown2] = useState(false);
   const [showDropdown3, setShowDropdown3] = useState(false);
@@ -15,26 +11,16 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-
         <ul className="nav-items">
-          <li className="nav-item">
-            <a href="#home">Home</a>
-          </li>
-          <li className="nav-item">
-            <a href="#about">About Us</a>
-          </li>
-
-
-
+          <Link to='/home' className='nav-item'>Home</Link>
+          <Link to='/about' className='nav-item'>About Us</Link>
 
           <li
             className="nav-item dropdown"
             onMouseEnter={() => setShowDropdown1(true)}
             onMouseLeave={() => setShowDropdown1(false)}
           >
-            <a href="#events" className="dropdown-toggle">
-              Events
-            </a>
+            <Link to="/events" className="dropdown-toggle">Events</Link>
             {showDropdown1 && (
               <ul className="dropdown-menu">
                 <li><a href="#service1">Events 2023-2024</a></li>
@@ -44,78 +30,57 @@ const Navbar = () => {
             )}
           </li>
 
-          {/* Dropdown 2 */}
           <li
             className="nav-item dropdown"
             onMouseEnter={() => setShowDropdown2(true)}
             onMouseLeave={() => setShowDropdown2(false)}
           >
-            <a href="#awards" className="dropdown-toggle">
-              Awards
-            </a>
+            <Link to="/awards" className="dropdown-toggle">Awards</Link>
             {showDropdown2 && (
               <ul className="dropdown-menu">
                 <li><a href="#contact1">2023-2024</a></li>
                 <li><a href="#support">2022-2023</a></li>
                 <li><a href="#support">2021-2022</a></li>
-
               </ul>
             )}
-
           </li>
 
-
-          {/* Dropdown 3 */}
           <li
             className="nav-item dropdown"
             onMouseEnter={() => setShowDropdown3(true)}
             onMouseLeave={() => setShowDropdown3(false)}
           >
-            <a href="#registration for membership" className="dropdown-toggle">
-              Registration for Membership
-            </a>
+            <Link to="/registration" className="dropdown-toggle">Registration for Membership</Link>
             {showDropdown3 && (
               <ul className="dropdown-menu">
                 <li><a href="#contact1">Conditions for membership</a></li>
                 <li><a href="#support">Apply for membership</a></li>
                 <li><a href="#support">Membership and Election Rules</a></li>
-                <li><a href="#support">Benifits of SGEPC</a></li>
-                <li><a href="#support">Memorandom & AOA</a></li>
-
-
+                <li><a href="#support">Benefits of SGEPC</a></li>
+                <li><a href="#support">Memorandum & AOA</a></li>
               </ul>
             )}
           </li>
 
-
-          {/* Dropdown 4 */}
           <li
             className="nav-item dropdown"
             onMouseEnter={() => setShowDropdown4(true)}
             onMouseLeave={() => setShowDropdown4(false)}
           >
-            <a href="#Member's Corner" className="dropdown-toggle">
-              Member's Corner
-            </a>
+            <Link to="/members-corner" className="dropdown-toggle">Member's Corner</Link>
             {showDropdown4 && (
               <ul className="dropdown-menu">
                 <li><a href="#contact1">Submit Exports Return</a></li>
                 <li><a href="#support">Update Company Details</a></li>
-
-
-
               </ul>
             )}
           </li>
-          <li className="nav-item">
-            <a href="#image gallery">Image Gallery</a>
-          </li>
 
-
+          <Link to='/imagegallery' className='nav-item'>Image Gallery</Link>
         </ul>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
