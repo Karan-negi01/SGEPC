@@ -1,0 +1,74 @@
+.header1{
+    width: 100%;
+    height:6vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px; */
+    background: #015488;
+}
+
+.header1-details{
+    width:20%;
+    height: 6vh;
+    /* border: 2px solid black;  */
+    margin-left: 10px;
+    color: #fff;   
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.header-maildetails{
+    width: 40%;
+    height: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header1-icons{
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header-mail{
+    width: 80%;
+    height: auto;
+    /* border: 2px solid green; */
+}
+
+.header-contactdetails{
+    width: 55%;
+    height: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.header1-content{
+    width: 30%;
+    height: 5vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.header1-content-details{
+    font-size: 12px;
+    cursor: pointer;
+    /* border: 2px solid black; */
+    transition: 0.3s  ease-in-out;
+
+}
+.header1-content-details:hover{
+    transform: scale(1.1);
+}
