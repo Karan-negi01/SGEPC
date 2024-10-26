@@ -26,3 +26,26 @@
     flex-direction: column;
     font-family: poppins;
 }
+
+
+.aboutus-box1{
+    width: 90%;
+    height: 60vh;
+    border: 2px solid red;
+    display: flex;
+    margin: auto;
+}
+
+.aboutus-box1-heading{
+    width: 50%;
+    border: 2px solid blue;
+    text-align: center;
+    align-content: center;
+    font-size: 80px;
+    font-weight: 600;
+    color: #015488;
+}
+
+.aboutus-box1-text{
+    width: 50%;
+}
