@@ -2,10 +2,15 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Homepage from "./components/homepage/Homepage";
 import About from "./components/aboutus/About";
 import Awards from "./components/awards/Awards";
-
+import { useNavigate } from "react-router-dom";
 
 
 function App() {
+
+  const Navigate =(path)=>{
+    Navigate(path)
+  }
+
   return (
     <BrowserRouter>
     <Routes>
