@@ -28,24 +28,156 @@
 }
 
 
-.aboutus-box1{
-    width: 90%;
+.aboutus-box{
+    width: 100%;
     height: 60vh;
-    border: 2px solid red;
+    /* border: 2px solid black; */
     display: flex;
     margin: auto;
+    margin-top: 80px;
+    background: #4fb5f592;
+    justify-content: space-around;
 }
-
-.aboutus-box1-heading{
-    width: 50%;
-    border: 2px solid blue;
+.aboutusheading{
+    width: 45%;
+    height: auto;
+    /* border: 2px solid red; */
     text-align: center;
     align-content: center;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 600;
     color: #015488;
+    
 }
 
-.aboutus-box1-text{
+.aoutus-details-box{
     width: 50%;
+    height: auto;
+    /* border: 2px solid blue; */
+    align-content: center;
+    color: #fff;
+    font-size: 18px;
+
 }
+
+
+
+/* Example CSS for Mission Component */
+.mission-container {
+    width: 90%;
+    height: 40vh;
+    /* border: 2px solid red; */
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    
+  }
+  
+  .mission-title {
+    color: #015488;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* border: 2px solid black; */
+    /* margin: auto; */
+    text-align: center;
+    align-content: center;
+    height: 15vh;
+    
+  }
+  
+  .mission-text {
+    width: 90%;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+    /* border: 2px solid red; */
+    margin: auto;
+    align-content: center;
+    height: 20vh;
+  }
+
+
+
+
+.team-corner{
+    width: 95%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+
+}
+
+
+.team-member-heading{
+    width: 100%;
+    height: 13vh;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 60px;
+    color: #015488;
+    font-weight: 600;
+    align-content: center;
+}
+
+
+
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-top: 30px;
+  }
+  
+  .member {
+    margin: 20px;
+    width: 320px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .member-info {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .member-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+.post{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #015488;
+  } 
+
+  .detials-info{
+    font-size: 14px;
+    margin-top: 30px;
+  }

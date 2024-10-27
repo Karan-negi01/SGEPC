@@ -24,10 +24,10 @@ const Navbar = () => {
             {showDropdown1 && (
               <ul className="dropdown-menu">
                 <li> <Link to="/events/2023-2024"><p>Events 2023-2024</p></Link></li>
-                <li><a href="#service2">Events 2022-2023</a></li>
-                <li><a href="#service3">Events 2021-2022</a></li>
-                <li><a href="#service3">Events 2020-2021</a></li>
-                <li><a href="#service3">Events 2019-2020</a></li>
+                <li><Link to="/events/2022-2023"><p>Events 2022-2023</p></Link></li>
+                <li><Link to="/events/2021-2022"><p>Events 2021-2022</p></Link></li>
+                
+                <li><Link to="/events/2019-2020"><p>Events 2019-2020</p></Link></li>
               </ul>
             )}
           </li>

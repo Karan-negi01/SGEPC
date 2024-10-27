@@ -1,0 +1,196 @@
+'use client'
+
+import React from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { ChevronRight, ChevronDown, Target, Activity, Users, Globe } from 'lucide-react'
+
+const MemorandumItem = ({ title, description, icon: Icon, gradient }) => {
+  const [isOpen, setIsOpen] = React.useState(false)
+
+  return (
+    <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg" style={{ background: gradient }}>
+      <CardHeader 
+        className="cursor-pointer flex flex-row items-center justify-between p-6"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className="flex items-center space-x-4">
+          <div className="bg-white p-3 rounded-full">
+            <Icon className="h-8 w-8 text-purple-600" />
+          </div>
+          <CardTitle className="text-xl font-bold text-white">{title}</CardTitle>
+        </div>
+        <ChevronDown 
+          className={`h-6 w-6 text-white transition-transform ${isOpen ? 'transform rotate-180' : ''}`} 
+        />
+      </CardHeader>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <CardContent className="p-6 bg-white/90">
+              <p className="text-gray-800">{description}</p>
+            </CardContent>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </Card>
+  )
+}
+
+export default function ModernWhiteAboutUs() {
+  const memorandumItems = [
+    {
+      title: "SGEPC's Objectives",
+      description: "The primary objective of SGEPC is to promote exports of sports goods and toys from India, fostering growth and international recognition in these sectors.",
+      icon: Target,
+      gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    },
+    {
+      title: "SGEPC's Activities",
+      description: "SGEPC engages in a wide range of activities designed to boost the industry's performance domestically while simultaneously enhancing its international presence and recognition.",
+      icon: Activity,
+      gradient: "linear-gradient(135deg, #6B46C1 0%, #B83280 100%)"
+    },
+    {
+      title: "An Apex Industry Forum",
+      description: "SGEPC serves as a unified platform for companies across the country with shared interests, facilitating the exchange of ideas, formulation of common promotional strategies, and voicing of concerns at both national and international levels.",
+      icon: Users,
+      gradient: "linear-gradient(135deg, #D53F8C 0%, #9F7AEA 100%)"
+    },
+    {
+      title: "Trade Promotion Activities",
+      description: "SGEPC coordinates various trade promotion initiatives, including organizing Indian participation in international trade fairs, arranging business delegation visits, and conducting promotional campaigns in global markets.",
+      icon: Globe,
+      gradient: "linear-gradient(135deg, #ED64A6 0%, #4299E1 100%)"
+    }
+  ]
+
+  return (
+    <div className="min-h-screen bg-white text-gray-800">
+      <div className="container mx-auto px-4 py-16">
+        <motion.section 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-5xl font-bold mb-6 text-purple-700">About Us</h1>
+          <p className="text-xl max-w-2xl mx-auto text-gray-600">
+            We're on a mission to redefine possibilities and shape the future through innovative solutions.
+          </p>
+        </motion.section>
+
+        <motion.section 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-16"
+        >
+          <Card className="border-2 border-purple-200 shadow-lg">
+            <CardContent className="p-8">
+              <h2 className="text-3xl font-semibold mb-4 text-purple-700">Our Mission</h2>
+              <p className="text-lg text-gray-700">
+                At our core, we believe in harnessing cutting-edge technology to create meaningful change. 
+                We're committed to delivering solutions that not only meet but exceed expectations, 
+                all while fostering a culture of innovation, collaboration, and continuous growth.
+              </p>
+            </CardContent>
+          </Card>
+        </motion.section>
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold mb-8 text-center text-purple-700">Meet Our Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className="overflow-hidden shadow-lg">
+                  <CardContent className="p-0">
+                    <div className="relative">
+                      <img 
+                        src={member.avatar} 
+                        alt={member.name} 
+                        className="w-full h-48 object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-purple-700/60 to-transparent" />
+                      <div className="absolute bottom-4 left-4 right-4 text-white">
+                        <h3 className="text-xl font-semibold">{member.name}</h3>
+                        <p className="text-sm opacity-90">{member.position}</p>
+                      </div>
+                    </div>
+                    <p className="p-4 text-sm text-gray-600">{member.bio}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+        <motion.section 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-semibold mb-8 text-center text-purple-700">Memorandum & Articles of Association</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {memorandumItems.map((item, index) => (
+              <MemorandumItem key={index} {...item} />
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-center"
+        >
+          <Card className="border-2 border-purple-200 shadow-lg">
+            <CardContent className="p-8">
+              <h2 className="text-3xl font-semibold mb-4 text-purple-700">Join Our Journey</h2>
+              <p className="mb-6 max-w-2xl mx-auto text-gray-600">
+                We're always seeking passionate individuals to join our innovative team. 
+                If you're driven to make a difference, we'd love to connect with you.
+              </p>
+              <Button size="lg" className="bg-purple-700 text-white hover:bg-purple-800">
+                Explore Opportunities <ChevronRight className="ml-2 h-4 w-4" />
+              </Button>
+            </CardContent>
+          </Card>
+        </motion.section>
+      </div>
+    </div>
+  )
+}
+
+const teamMembers = [
+  {
+    name: "Alex Johnson",
+    position: "CEO & Founder",
+    bio: "With a passion for innovation, Alex leads our company towards groundbreaking horizons.",
+    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&h=256&q=80"
+  },
+  {
+    name: "Samantha Lee",
+    position: "CTO",
+    bio: "Samantha's technical expertise drives our cutting-edge solutions to new heights.",
+    avatar: "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&h=256&q=80"
+  },
+  {
+    name: "Michael Chen",
+    position: "Head of Design",
+    bio: "Michael's creative vision ensures our products are both beautiful and user-centric.",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&h=256&q=80"
+  }
+]
