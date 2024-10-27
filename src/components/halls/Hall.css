@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Arima:wght@100..700&family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hall-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+}
+
+
+.hall-content{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hall_name{
+    font-size: 60px;
+    font-weight: 600;
+    color: #015488;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.hall_cards_container{
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid red;  */
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.hall_cards{
+    width: 30%;
+    height: 56vh;
+    border: 2px solid #939090a1;
+    box-shadow: 10px 10px 5px 0px rgba(222,213,222,1);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+
+.hall_card_img {
+    width: 93%;
+    height: 33vh;
+    border: 2px solid #939090d6;
+    margin: 10px;
+    border-radius: 7px;
+    overflow: hidden; 
+    cursor: pointer;
+}
+
+.hall_card_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: transform 0.7s ease-in-out;
+}
+
+
+.hall_card_img:hover img {
+    transform: scale(2.5); 
+}
+
+
+
+.hall_card_title{
+ 
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+.hall_card_text{
+   
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: grey;
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+.hall_card_button{
+    background-color: #015488;
+    font-size: 16px;
+    font-weight: 700;
+    width: 40%;
+    padding: 10px;
+    margin-left: 30%;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.hall_card_button:hover{
+  cursor: pointer;
+  background-color: #015488e9;
+}
