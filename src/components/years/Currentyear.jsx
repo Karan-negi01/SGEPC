@@ -7,6 +7,7 @@ import rbsm from '../assests/rbsm.jpg'
 import aust from '../assests/aust.jpg'
 import hongkong from '../assests/hongkong.jpg'
 import spiel from '../assests/spiel.jpg'
+import Footer from '../footer/Footer'
 
 const Currentyear = () => {
   return (
@@ -70,7 +71,7 @@ const Currentyear = () => {
         </div>
 
       </div>
-
+      <Footer/>
     </div>
   )
 }

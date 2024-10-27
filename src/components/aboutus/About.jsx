@@ -3,6 +3,7 @@ import './About.css'
 import Firstheader from '../headers/Firstheader'
 import Secondheader from '../headers/Secondheader'
 import Navbar from '../navbar/Navbar'
+import Footer from '../footer/Footer'
 
 const About = () => {
   return (
@@ -45,7 +46,7 @@ const About = () => {
               <h3>Mr. Vikas Gupta</h3>
               <p className='post'>Chairman</p>
               <p className='detials-info'>
-                With a passion for innovation, Alex leads our company
+                With a passion for innovation, Vikas leads our company
                 towards groundbreaking horizons.
               </p>
             </div>
@@ -58,7 +59,7 @@ const About = () => {
               <h3>Mr. Sumnesh Agarwal</h3>
               <p className='post'>Vice Chairman</p>
               <p className='detials-info'>
-                Samantha's technical expertise drives our cutting-edge
+                Sumesh's technical expertise drives our cutting-edge
                 solutions to new heights.
               </p>
             </div>
@@ -71,7 +72,7 @@ const About = () => {
               <h3> 	Mr. Amber Anand</h3>
               <p className='post'>Regional Director (UP Zone)</p>
               <p className='detials-info'>
-                Michael's creative vision ensures our products are both
+               Amber's creative vision ensures our products are both
                 beautiful and user-centric.
               </p>
             </div>
@@ -84,7 +85,7 @@ const About = () => {
               <h3>	Mr. Tarun Dewan</h3>
               <p className='post'>Executive Director</p>
               <p className='detials-info'>
-                Michael's creative vision ensures our products are both
+                Tarun's creative vision ensures our products are both
                 beautiful and user-centric.
               </p>
             </div>
@@ -99,6 +100,9 @@ const About = () => {
 
 
       </div>
+      
+      <Footer/>
+
     </div>
   )
 }

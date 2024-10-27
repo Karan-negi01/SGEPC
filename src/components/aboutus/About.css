@@ -34,7 +34,7 @@
     /* border: 2px solid black; */
     display: flex;
     margin: auto;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     background: #4fb5f592;
     justify-content: space-around;
 }

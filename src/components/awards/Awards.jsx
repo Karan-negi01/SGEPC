@@ -3,6 +3,7 @@ import './Awards.css';
 import Firstheader from '../headers/Firstheader';
 import Secondheader from '../headers/Secondheader';
 import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 
 const Awards = () => {
     return (
@@ -35,6 +36,8 @@ const Awards = () => {
                     </div>
                 </div>
             </div>
+
+            <Footer/>
         </div>
     )
 }

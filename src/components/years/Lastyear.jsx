@@ -6,12 +6,13 @@ import rbsm from '../assests/rbsm.jpg'
 import aust from '../assests/aust.jpg'
 import hongkong from '../assests/hongkong.jpg'
 import spiel from '../assests/spiel.jpg'
+import Footer from '../footer/Footer'
 
 const Lastyear = () => {
   return (
     <div>
 
-<div className="currentyear-container">
+      <div className="currentyear-container">
         <Firstheader />
         <Secondheader />
         <Navbar />
@@ -58,7 +59,7 @@ const Lastyear = () => {
               <div className="event_card_text">Germany</div>
               <button className="event_card_button">View Halls</button>
             </div>
-           
+
 
 
           </div>
@@ -71,7 +72,7 @@ const Lastyear = () => {
 
       </div>
 
-      
+    <Footer/>
     </div>
   )
 }

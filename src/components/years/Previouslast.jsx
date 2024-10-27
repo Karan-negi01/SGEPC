@@ -6,6 +6,7 @@ import newyork1 from '../assests/newyork1.jpg'
 import australia from '../assests/australianfair.jpg'
 import virtual from '../assests/virtual fair.jpg'
 import fsbb from '../assests/fsbb.jpg'
+import Footer from '../footer/Footer'
 
 const Previouslast = () => {
   return (
@@ -71,7 +72,7 @@ const Previouslast = () => {
 
       </div>
 
-      
+      <Footer/>
     </div>
   )
 }

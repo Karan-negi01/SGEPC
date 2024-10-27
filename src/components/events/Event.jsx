@@ -4,6 +4,7 @@ import './Event.css';
 import Firstheader from '../headers/Firstheader';
 import Secondheader from '../headers/Secondheader';
 import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 
 const Event = () => {
     return (
@@ -25,6 +26,7 @@ const Event = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
