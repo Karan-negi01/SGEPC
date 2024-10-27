@@ -7,6 +7,9 @@ import Currentyear from "./components/years/Currentyear";
 import Lastyear from "./components/years/Lastyear";
 import Previouslast from "./components/years/Previouslast";
 import Secondpreviouslast from "./components/years/Secondpreviouslast";
+import Awardscurrentyear from "./components/awards-years/Awardscurrentyear";
+import Awardslastyear from "./components/awards-years/Awardslastyear";
+import Awardspreviouslast from "./components/awards-years/Awardspreviouslast";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path="/events/2021-2022" element={<Previouslast/>} />
         <Route path="/events/2019-2020" element={<Secondpreviouslast/>} />
         <Route path="/awards" element={<Awards />} />
+        <Route path="/awards/2023-2024" element={<Awardscurrentyear/>} />
+        <Route path="/awards/2022-2023" element={<Awardslastyear/>} />
+        <Route path="/awards/2021-2022" element={<Awardspreviouslast/>} />
       </Routes>
     </BrowserRouter>
   );

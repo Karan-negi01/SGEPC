@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
 import './Event.css';
 import Firstheader from '../headers/Firstheader';
 import Secondheader from '../headers/Secondheader';
