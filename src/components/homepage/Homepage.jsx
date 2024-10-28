@@ -325,7 +325,17 @@ const Homepage = () => {
                         <div className="scheme_box_icon"><a target="_blank" rel="noopener noreferrer" href={dfis}><FcDownload /></a></div>
                     </div>
 
+                    
+
                 </div>
+
+                
+        <div className="about_join_team">
+          <div className="about_join_team_title">Join Our Journey</div>
+          <div className="about_join_team_text">We're always seeking passionate individuals to join our innovative team. If you're driven to make a difference, we'd love to connect with you.</div>
+          <div className="about_join_team_box">Explore Oppurtunities</div>
+
+        </div>
 
 
 

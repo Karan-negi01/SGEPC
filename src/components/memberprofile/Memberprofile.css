@@ -18,22 +18,53 @@
     font-family: poppins;
     /* border: 2px solid red; */
 }
+
+.member-content-container{
+    width: 80%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+}
   
-  .members-navbar {
+.members-left{
+    width: 70%;
+    height: auto;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.members-navbar {
+    width: 100%;
+    height: 8vh;
     background-color: #f9f9f9;
-    padding: 10px 20px;
-    border: 1px solid red;
+    /* padding: 10px 20px; */
+    /* border: 1px solid red; */
+    
   }
   
   .members-navbar ul {
     list-style: none;
     display: flex;
-    gap: 15px;
-    padding: 0;
+    justify-content: space-around;
+    align-content: center;
   }
   
   .members-navbar li {
     font-size: 14px;
+    /* border: 2px solid green; */
+    width: 20%;
+    text-align: center;
+    height: 8vh;
+    align-content: center;
+    cursor: pointer;
+  }
+
+  .members-navbar li:hover{
+    background-color: #70beee;
   }
   
   .main-content {
