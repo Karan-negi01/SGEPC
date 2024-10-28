@@ -802,6 +802,8 @@
 
        flex-direction: column;
        height: auto;
+       margin: 10px auto;
+       width: 95%;
 
 
    }
@@ -810,6 +812,8 @@
    .homepage-about-content button {
        height: auto;
        width: auto;
+       padding: 10px 00;
+       margin: 10px 00;
 
 
    }
@@ -819,10 +823,22 @@
 
 
    flex-direction: column;
+   margin: 20px auto;
+   width: 100%;
+   align-items: center;
 
 
 
 
+   }
+
+
+   .content-box-img {
+
+
+       width: 100%;
+       margin: 00 auto;
+       height: auto;
    }
 
 
