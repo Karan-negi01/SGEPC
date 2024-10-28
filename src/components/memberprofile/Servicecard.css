@@ -1,0 +1,24 @@
+/* ServiceCard.css */
+.service-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.services-section {
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
