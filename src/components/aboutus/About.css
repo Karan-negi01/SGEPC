@@ -188,15 +188,15 @@
 
   .about_memo{
     width: 90%;
-    height: 80vh;
-    /* / border: 2px solid red; /S */
+    height: auto;
+    /* border: 2px solid red;  */
     margin: auto;
-    margin-top: 80px;
+    margin-top: 140px;
   }
 
   .memo_title{
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color: #015488;
     margin-top: 10px;
@@ -204,18 +204,20 @@
 
   .about_memo_boxes{
     width: 100%;
-    height: 40vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 40px;
   }
 
   .memo_box{
     width: 49%;
-    height: 23vh;
+    height: 20vh;
     border: 2px solid #55555552;
     border-radius: 15px;
     margin-top: 40px;
+    padding:5px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
@@ -226,37 +228,38 @@
   }
 
   .memo_box_title{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     margin-left: 10px;
     margin-top: 10px;
   }
 
   .memo_box_text{
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
     margin-left: 10px;
+    color: grey;
   }
 
 
 
   .about_join_team{
-    /* / border: 2px solid red; / */
+     /* border: 2px solid red;  */
     display: flex;
     flex-direction: column;
     margin-top: 45px;
     text-align: center;
     width: 100%;
-    height: 30vh;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    height: 40vh;
+    margin-top: 120px;
+    /* margin-bottom: 30px; */
 }
 
 .about_join_team_title{
     font-size: 48px;
     font-weight: 600;
     color: #015488;
-    /* / border: 2px solid orange; // */
+    /* border: 2px solid orange; */
     width: 30%;
     margin: auto;
 }
@@ -265,7 +268,7 @@
     font-size: 16px;
     font-weight: 500;
     color: #015488;
-    /* / border: 2px solid orangered; / */
+   /* border: 2px solid orangered;  */
     width: 45%;
     margin: auto;
 }
@@ -277,13 +280,19 @@
     text-align: center;
     color: #ffffff;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     margin: auto;
     margin-top: 15px;
     padding: 6px;
+    height: 7vh;
+    align-content: center;
+    cursor:pointer;
+    transition: 0.3s ease-in-out;
+   
 
 }
 
 .about_join_team_box:hover{
-cursor:pointer;
+
+transform: scale(1.1);
 }

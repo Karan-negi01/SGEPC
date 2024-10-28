@@ -129,6 +129,19 @@ const About = () => {
               <div className="memo_box_text">SGEPC organizes trade promotion activities like Indian participation in International Trade fairs, Visits of Business Delegations, Promotional campaigns in international markets etc.</div>
             </div>
 
+            <div className="memo_box">
+              <div className="memo_box_title">Export Statistics and Projections</div>
+              <div className="memo_box_text">SGEPC collects export data from its members, maintains a statistical record of exports of sports goods and toys and evaluates its performance on an annual basis.</div>
+            </div>
+
+
+
+
+            <div className="memo_box">
+              <div className="memo_box_title">Export Awards</div>
+              <div className="memo_box_text">SGEPC recognizes the achievements of exporters and awards the top performers annually.</div>
+            </div>
+
 
 
           </div>
@@ -140,6 +153,7 @@ const About = () => {
           <div className="about_join_team_box">Explore Oppurtunities</div>
 
         </div>
+        
 
 
 
