@@ -3,6 +3,13 @@ import './Memberprofile.css';
 import Firstheader from '../headers/Firstheader';
 import Secondheader from '../headers/Secondheader';
 import Navbar from '../navbar/Navbar';
+import inciterzlogo from '../assests/inciterzlogo.png' 
+import inciterzvideo from '../assests/Inciterzvideo.mp4' 
+
+import { FaInstagram } from "react-icons/fa6";
+import { CiLinkedin } from "react-icons/ci";
+import Footer from '../footer/Footer';
+
 
 function Memberprofile() {
     return (
@@ -33,41 +40,39 @@ function Memberprofile() {
 
                         <div className="video-section">
                             <div className="video-header">
-                                <img src="author-image.jpg" alt="Author" className="author-avatar" />
+                                <img src={inciterzlogo} alt="Company Profile" className="author-avatar" />
                                 <div className="video-info">
-                                    <p className="video-title">Favoured App Marketing Agency Video.mp4</p>
-                                    <p className="video-author">Joe Shepherd</p>
+                                <p className="video-author">Inciterz</p>
+                                    <p className="video-title">Consult Curate Communicate</p>
+                                   
                                 </div>
                             </div>
                             <div className="video-container">
-                                <video src="video.mp4" controls className="video-player"></video>
+                                <video src={inciterzvideo} controls className="video-player"></video>
                             </div>
-                            <div className="video-actions">
-                                <button className="action-button">❤️</button>
-                                <button className="action-button">💬</button>
-                                <button className="action-button">✈️</button>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
 
                     <div className="sidebar">
-                        <h2>Contact Favoured</h2>
+                        <h2>Contact Details</h2>
                         <div className="contact-item">
-                            <span>🌐</span> favoured.co.uk
+                            <span>🌐</span>inciterz.com
                         </div>
                         <div className="contact-item">
-                            <span>📧</span> hello@favoured.co.uk
+                            <span>📧</span> shashank@inciterz.com
                         </div>
                         <div className="contact-item">
-                            <span>📞</span> +44 0203 488 2548
+                            <span>📞</span> +91 9810200568
                         </div>
                         <div className="social-icons">
-                            <span>🔗 LinkedIn</span>
-                            <span>📸 Instagram</span>
+                            <span><FaInstagram/></span>
+                            <span><CiLinkedin/></span>
                         </div>
                     </div>
             </div>
+            <Footer/>
         </div>
     );
 }

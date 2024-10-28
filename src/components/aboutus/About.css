@@ -35,7 +35,7 @@
     display: flex;
     margin: auto;
     /* margin-top: 80px; */
-    background: #4fb5f592;
+    background: #015488;
     justify-content: space-around;
     margin-top: 50px;
 }
@@ -47,7 +47,7 @@
     align-content: center;
     font-size: 90px;
     font-weight: 600;
-    color: #015488;
+    color: #fff;
     
 }
 

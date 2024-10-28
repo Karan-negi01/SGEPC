@@ -22,7 +22,7 @@
 .member-content-container{
     width: 80%;
     height: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -32,7 +32,7 @@
 .members-left{
     width: 70%;
     height: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
 }
@@ -43,6 +43,7 @@
     background-color: #f9f9f9;
     /* padding: 10px 20px; */
     /* border: 1px solid red; */
+    border: 2px solid #ddd;
     
   }
   
@@ -54,7 +55,7 @@
   }
   
   .members-navbar li {
-    font-size: 14px;
+    font-size: 18px;
     /* border: 2px solid green; */
     width: 20%;
     text-align: center;
@@ -68,8 +69,11 @@
   }
   
   .main-content {
+    width: 100%;
+    border: 2px solid #ddd;
     display: flex;
     padding: 20px;
+    margin-top: 20px;
   }
   
   .video-section {
@@ -90,12 +94,16 @@
     margin-right: 10px;
   }
   
-  .video-info {
-    font-size: 14px;
+  .video-author {
+    font-size: 18px;
+    font-weight: 500;
+    
   }
   
   .video-title {
-    font-weight: bold;
+
+    font-weight: 400;
+    font-size: 13px;
   }
   
   .video-container {
@@ -107,28 +115,26 @@
     border-radius: 10px;
   }
   
-  .video-actions {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .action-button {
-    font-size: 18px;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
+ 
+ 
   .sidebar {
-    flex: 1;
-    padding: 20px;
-    border-left: 1px solid #ddd;
+    width: 25%;
+    /* flex: 1; */
+    /* padding: 20px; */
+    border: 2px solid #ddd;
+    height: 50vh;
+    
   }
   
   .sidebar h2 {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    /* margin-bottom: 15px; */
+    height: 8vh;
+    text-align: center;
+    /* border: 2px solid black; */
+    align-content: center;
+    
   }
   
   .contact-item {
@@ -136,6 +142,10 @@
     align-items: center;
     margin-bottom: 10px;
     font-size: 14px;
+    height: 6vh;
+    border: 2px solid #ddd;
+    /* margin: 15px; */
+    margin: 20px 20px 0 20px;
   }
   
   .contact-item span {
@@ -143,11 +153,19 @@
   }
   
   .social-icons {
-    margin-top: 20px;
+    
+    width: 90%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+   margin: 20px auto auto auto;
+    
   }
   
   .social-icons span {
     display: block;
-    margin-top: 5px;
+    font-size: 40px;
+    cursor: pointer;
+   
   }
   

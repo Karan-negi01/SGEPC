@@ -1,4 +1,4 @@
-.header2{
+.header2 {
     width: 100%;
     height: 14vh;
     /* border: 2px solid red; */
@@ -6,21 +6,22 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-       
-}
-
-.header2-logo1{
+   }
+   
+   
+   .header2-logo1 {
     width: 30%;
     /* border: 2px solid green; */
     height: 10vh;
-}
-.header2-logo2{
+   }
+   .header2-logo2 {
     width: 15%;
     /* border: 2px solid green; */
     height: 8vh;
-}
-
-.header2-searchbar{
+   }
+   
+   
+   .header2-searchbar {
     width: 18%;
     /* border: 2px solid blue; */
     height: 6.3vh;
@@ -28,26 +29,26 @@
     align-items: center;
     display: flex;
     border-radius: 5px;
-}
-
-.header2-searchbar input{
+   }
+   
+   
+   .header2-searchbar input {
     width: 85%;
     /* border: 2px solid red; */
     height: 6vh;
     padding: 5px 10px;
     font-size: 18px;
     background-color: #ebebe9;
-
-}
-
-.header2-searchbar input:focus-visible{
-
-border: none;
-outline: none;
-
-}
-
-.search-icon{
+   }
+   
+   
+   .header2-searchbar input:focus-visible {
+    border: none;
+    outline: none;
+   }
+   
+   
+   .search-icon {
     width: 15%;
     height: 6vh;
     border: none;
@@ -56,10 +57,10 @@ outline: none;
     color: #fff;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-
-}
-
-.header2-textbox{
+   }
+   
+   
+   .header2-textbox {
     width: 20%;
     height: 11vh;
     border: 3px solid #015488;
@@ -68,4 +69,78 @@ outline: none;
     padding: 10px;
     color: #015488;
     font-weight: 500;
-}
+   }
+   
+   
+   /* Large Desktop */
+   @media only screen and (min-width: 1400px) {
+    /* Your large desktop styles here */
+   
+   
+    .header2 {
+      width: 100%;
+      height: 14vh;
+      /* border: 2px solid red; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+   
+   
+    .header2-logo1 {
+      width: 25%;
+      /* border: 2px solid green; */
+      height: auto;
+    }
+   
+   
+    .header2-textbox {
+      height: auto;
+      width: 18%;
+    }
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   /* Extra Small Devices (Mobile Phones - Portrait) */
+   @media only screen and (max-width: 575.98px) {
+      /* Your mobile styles here */
+   
+   
+      .header2-searchbar {
+   
+   
+          display: none;
+   
+   
+      }
+   
+   
+      .header2-textbox {
+   
+   
+          display: none;
+      }
+   
+   
+   
+   
+      .header2-logo1 {
+          width: 100%;
+   
+   
+      }
+   
+   
+    }
+    
+   
+   

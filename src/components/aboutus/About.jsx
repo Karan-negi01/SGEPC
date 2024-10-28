@@ -5,6 +5,15 @@ import Secondheader from '../headers/Secondheader'
 import Navbar from '../navbar/Navbar'
 import Footer from '../footer/Footer'
 
+import amber from '../assests/amber.png'
+import sumesh from '../assests/sumesh.png'
+import vikas from '../assests/vikas.png'
+import tarun from '../assests/tarun.png'
+
+
+
+
+
 const About = () => {
   return (
     <div>
@@ -40,7 +49,7 @@ const About = () => {
 
             <div className="member">
               <div className="member-image">
-                <img src="https://via.placeholder.com/150" alt="Alex Johnson" />
+                <img src={vikas} alt="Vikas Gupta" />
               </div>
               <div className="member-info">
                 <h3>Mr. Vikas Gupta</h3>
@@ -53,7 +62,7 @@ const About = () => {
             </div>
             <div className="member">
               <div className="member-image">
-                <img src="https://via.placeholder.com/150" alt="Samantha Lee" />
+                <img src={sumesh} alt="Sumesh Agarwal" />
               </div>
               <div className="member-info">
                 <h3>Mr. Sumnesh Agarwal</h3>
@@ -66,7 +75,7 @@ const About = () => {
             </div>
             <div className="member">
               <div className="member-image">
-                <img src="https://via.placeholder.com/150" alt="Michael Chen" />
+                <img src={amber} alt="Amber Anand" />
               </div>
               <div className="member-info">
                 <h3> 	Mr. Amber Anand</h3>
@@ -79,7 +88,7 @@ const About = () => {
             </div>
             <div className="member">
               <div className="member-image">
-                <img src="https://via.placeholder.com/150" alt="Michael Chen" />
+                <img src={tarun} alt="Tarun Dewan" />
               </div>
               <div className="member-info">
                 <h3>	Mr. Tarun Dewan</h3>
