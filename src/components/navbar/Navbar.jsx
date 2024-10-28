@@ -97,7 +97,7 @@ const Navbar = () => {
          </li>
 
 
-         <Link to='/imagegallery' className='nav-item'>Image Gallery</Link>
+         <Link to='/gallery' className='nav-item'>Image Gallery</Link>
        </ul>
      </nav>
    </div>

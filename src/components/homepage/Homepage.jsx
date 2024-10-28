@@ -58,6 +58,8 @@ import Firstheader from '../headers/Firstheader';
 import Secondheader from '../headers/Secondheader';
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
+// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -65,7 +67,13 @@ import Footer from '../footer/Footer';
 
 
 const Homepage = () => {
+    
+    const navigate = useNavigate();
 
+    const handleSearchClick = (e) => {
+        e.preventDefault();  
+        navigate('/members');  
+    };
 
    const images = [gallery, gallery2, gallery3];
    const texts = [
@@ -182,7 +190,7 @@ const Homepage = () => {
                                <label>By Item Name</label>
                                <input type="text" />
                            </div>
-                           <button className='form-search' type="submit">Search</button>
+                           <button className='form-search' onClick={handleSearchClick} type="submit">Search</button>
                        </form>
                    </div>
                    <div className="text-section">

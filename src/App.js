@@ -19,6 +19,7 @@ import Stall02 from "./components/stalls/Stall02";
 import Stall03 from "./components/stalls/Stall03";
 import Stall04 from "./components/stalls/Stall04";
 import Memberprofile from "./components/memberprofile/Memberprofile";
+import Gallery from "./components/gallery/Gallery";
 
 function App() {
   return (
@@ -48,6 +49,8 @@ function App() {
         <Route path="/awards/2021-2022" element={<Awardspreviouslast/>} />
 
         <Route path="/members" element={<Memberprofile/>}/>
+
+        <Route path="/gallery" element={<Gallery />} />
 
 
       </Routes>
