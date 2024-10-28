@@ -22,7 +22,7 @@
 
 .header2-searchbar{
     width: 18%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 6.3vh;
     /* padding: 5px; */
     align-items: center;
@@ -34,15 +34,23 @@
     width: 85%;
     /* border: 2px solid red; */
     height: 6vh;
-    padding: 5px;
+    padding: 5px 10px;
     font-size: 18px;
+    background-color: #ebebe9;
+
+}
+
+.header2-searchbar input:focus-visible{
+
+border: none;
+outline: none;
 
 }
 
 .search-icon{
     width: 15%;
     height: 6vh;
-    /* border: 2px solid red; */
+    border: none;
     /* font-size: 20px; */
     background: #015488;
     color: #fff;

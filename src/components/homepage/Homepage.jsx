@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 // import { FaFacebookF } from "react-icons/fa";
 // import { FaInstagram } from "react-icons/fa";
 // import { FaYoutube } from "react-icons/fa";
@@ -13,10 +13,12 @@ import chart from '../assests/chart.png';
 import about1 from '../assests/about.png';
 import exportimg from '../assests/6.png';
 import gallery from '../assests/7.png';
+import gallery2 from '../assests/gallery2.jpg'
+import gallery3 from '../assests/gallery3.jpg'
 import spot1 from '../assests/8.png';
 import spot2 from '../assests/9.png';
 import spot3 from '../assests/10.png';
-import { BsFillFileEarmarkPostFill } from "react-icons/bs";
+import { FcDownload } from "react-icons/fc";
 
 
 
@@ -28,9 +30,13 @@ import about from '../assests/2.png'
 import content1 from '../assests/3.png'
 import content2 from '../assests/4.png'
 import content3 from '../assests/5.png'
+import  eventcircular from '../assests/event-circular.pdf'
+import dfis from '../assests/DFIS_Circular_2024-25.pdf'
+import holidays from '../assests/List_Holidays_2024.pdf'
 
-
-
+import MAI from '../assests/MAI.pdf'
+import drawback from '../assests/Drawback.pdf'
+import RODTEP from '../assests/RODTEP.pdf'
 
 
 
@@ -42,7 +48,30 @@ import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 
 
+
 const Homepage = () => {
+
+    const images = [gallery, gallery2, gallery3];
+    const texts = [
+        { title: "Explore Our Stunning Image Gallery", description: "Discover the Beauty of Our Work" },
+        { title: "Explore Our Stunning Image Gallery", description: "Discover the Beauty of Our Work" },
+        { title: "Explore Our Stunning Image Gallery", description: "Discover the Beauty of Our Work" },
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 4000);
+
+        return () => clearInterval(interval); 
+    }, [images.length]);
+
+
+
+
+
     return (
         <div>
             <div className="homepage-container">
@@ -182,10 +211,16 @@ const Homepage = () => {
 
                 <div className="sgepc_gallery">
                     <div className="sgepc_gallery_title">Image Gallery</div>
-                    <div className="sgepc_gallery_img"><img src={gallery} alt="gallery" />
+                    <div className="festivals_carousel">
+                    <div className="carousel_image_container">
+                        <img src={images[currentIndex]} alt={`banner${currentIndex + 1}`} />
+                        <div className="carousel_text">
+                            <h1>{texts[currentIndex].title}</h1>
+                            <p className='gallery_subtext' >{texts[currentIndex].description}</p>
+                        </div>  
 
-                        <div className="gallery_text">Explore Our Stunning Image Gallery</div>
-                        <div className="gallery_subtext">Discover the Beauty of Our Work</div></div>
+                    </div> 
+                </div> 
                 </div>
 
 
@@ -220,7 +255,7 @@ const Homepage = () => {
                             <span className="scheme_box_text_title">MAI Scheme</span>
                         </div>
 
-                        <div className="scheme_box_icon"><BsFillFileEarmarkPostFill /></div>
+                        <div className="scheme_box_icon"><a target="_blank" rel="noopener noreferrer"  href={MAI}><FcDownload /></a></div>
                     </div>
 
 
@@ -229,7 +264,7 @@ const Homepage = () => {
                             <span className="scheme_box_text_title">NEW DRAWBACK RATES 2023</span>
                         </div>
 
-                        <div className="scheme_box_icon"><BsFillFileEarmarkPostFill /></div>
+                        <div className="scheme_box_icon"><a target="_blank" rel="noopener noreferrer" href={drawback}><FcDownload /></a></div>
                     </div>
 
 
@@ -240,7 +275,7 @@ const Homepage = () => {
                             <span className="scheme_box_text_title">RoDTEP Rates</span>
                         </div>
 
-                        <div className="scheme_box_icon"><BsFillFileEarmarkPostFill /></div>
+                        <div className="scheme_box_icon"><a target="_blank" rel="noopener noreferrer" href={RODTEP}><FcDownload /></a></div>
                     </div>
 
                 </div>
@@ -266,7 +301,7 @@ const Homepage = () => {
                             <span className="scheme_box_text_title">Event Circular 2023-2024</span>
                         </div>
 
-                        <div className="scheme_box_icon"><BsFillFileEarmarkPostFill /></div>
+                        <div className="scheme_box_icon"><a target="_blank" rel="noopener noreferrer" href={eventcircular}><FcDownload /></a></div>
                     </div>
 
 
@@ -275,7 +310,7 @@ const Homepage = () => {
                             <span className="scheme_box_text_title">List of holidays 2024</span>
                         </div>
 
-                        <div className="scheme_box_icon"><BsFillFileEarmarkPostFill /></div>
+                        <div className="scheme_box_icon"><a target="_blank" rel="noopener noreferrer" href={holidays}><FcDownload /></a></div>
                     </div>
 
 
@@ -287,7 +322,7 @@ const Homepage = () => {
 
                         </div>
 
-                        <div className="scheme_box_icon"><BsFillFileEarmarkPostFill /></div>
+                        <div className="scheme_box_icon"><a target="_blank" rel="noopener noreferrer" href={dfis}><FcDownload /></a></div>
                     </div>
 
                 </div>

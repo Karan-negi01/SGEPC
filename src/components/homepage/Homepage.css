@@ -389,7 +389,42 @@
     margin-bottom: 10px;
 }
 
-.sgepc_gallery_img{
+.festivals_carousel{
+    width: 100%;
+    height: 90vh;
+     /* border: 2px solid black; */
+     
+    overflow: hidden;
+}
+
+.festivals_carousel img{
+    width: 100%;
+    height: 90vh;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+}
+  
+.carousel_image_container {
+    position: relative;
+       
+}
+
+
+.carousel_text {
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    color: #fff;
+    width: 30%; 
+    z-index: 10; 
+
+  }
+
+
+
+/* .sgepc_gallery_img{
     width: 100%;
     height: 100%;
     margin-top: 10px;
@@ -399,9 +434,9 @@
 .sgepc_gallery_img img{
     width: 100%;
     height: 100%;
-}
+} */
 
-.gallery_text{
+ /* .gallery_text{
     font-size: 46px;
     font-weight: 500;
     position: absolute;
@@ -409,16 +444,17 @@
     left: 5%;
     color: #fff;
     width: 30%;
-}
+} */
 
 .gallery_subtext{
     font-size: 22px;
     font-weight: 400;
     position: absolute;
-    bottom: 35%;
-    left: 5%;
+    margin-top: 10px;
+
+
     color: #fff;
-}
+} 
 
 
 

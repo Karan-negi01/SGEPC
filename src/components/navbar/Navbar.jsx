@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import benifits from '../assests/benifits.pdf'
+import membership from '../assests/Membership-Election-Rules.pdf'
+import memoaoa from '../assests/memoaoa.pdf'
 
 const Navbar = () => {
   const [showDropdown1, setShowDropdown1] = useState(false);
@@ -59,9 +62,9 @@ const Navbar = () => {
               <ul className="dropdown-menu">
                 <li><a href="#contact1">Conditions for membership</a></li>
                 <li><a href="#support">Apply for membership</a></li>
-                <li><a href="#support">Membership and Election Rules</a></li>
-                <li><a href="#support">Benefits of SGEPC</a></li>
-                <li><a href="#support">Memorandum & AOA</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href={membership}>Membership and Election Rules</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href={benifits}>Benefits of SGEPC</a></li>
+                <li><a  target="_blank" rel="noopener noreferrer" href={memoaoa}>Memorandum & AOA</a></li>
               </ul>
             )}
           </li>
